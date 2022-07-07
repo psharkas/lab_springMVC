@@ -1,0 +1,36 @@
+package co.grandcircus.labone;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class WebPageController {
+	
+	@RequestMapping("/")
+	public String webPageReturn() {
+		return "index";
+	}
+	
+	@RequestMapping("/showpizza")
+	public String showPizza(@RequestParam String type, @RequestParam String price, Model model) {
+		
+		model.addAttribute("type", type);
+		model.addAttribute("price", price);
+		
+		return "showpizza";
+
+}
+	
+	@RequestMapping("/pizzareview")
+	public String showPizzaReview(@RequestParam String type, @RequestParam String price, Model model) {
+		
+		model.addAttribute("type", type);
+		model.addAttribute("price", price);
+		
+		return "pizzareview";
+
+}
+	
+}

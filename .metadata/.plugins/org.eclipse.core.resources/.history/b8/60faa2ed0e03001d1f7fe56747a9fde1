@@ -9,6 +9,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>hello</h1>
+
+<form action="/pizzareview" method="post">
+	Name: <input name="name" type="text"/><br>
+	Comment: <input name="comment" type="text"/><br>
+	Rating: <input name="rating" type="number" min = "0" max = "5"/><br>
+	
+	<input type="submit"/>
+</form>
+<a href="/">Back to Homepage</a>
+
+
+
 </body>
 </html>

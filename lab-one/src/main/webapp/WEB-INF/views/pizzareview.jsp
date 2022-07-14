@@ -11,8 +11,8 @@
 <body>
 
 <form action="/pizzareview" method="post">
-	Name: <input name="name" type="text"/><br>
-	Comment: <input name="comment" type="text"/><br>
+	Name: <input name="name" type="text" required="required"/><br>
+	Comment: <input name="comment" type="text" minlength="5"/><br>
 	Rating: <input name="rating" type="number" min = "0" max = "5"/><br>
 	
 	<input type="submit"/>

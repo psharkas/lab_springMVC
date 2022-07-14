@@ -17,7 +17,7 @@
   			<option value="medium">Medium</option>
   			<option value="large">Large</option>
 		</select><br>
-	Toppings: <input name="toppings" type="number" min = "0" max = "10"/><br>
+	Toppings: <input name="toppings" type="number"/><br>
 	Gluten Free Crust: <input name="gfcrust" type="checkbox"/><br>
 	
 	Comment: <input name="comment" type="text"/><br>
